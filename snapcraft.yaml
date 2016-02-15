@@ -1,0 +1,11 @@
+name: pi2-i2c
+version: 1
+summary: Raspberry Pi 2 I2C
+description: |
+    This snap offers a skill for accessing the I2C controller on a Raspberry Pi 2
+parts:
+    dummy:
+        plugin: nil
+offers:
+    i2c:
+        device:  /dev/i2c-1
